@@ -1,0 +1,19 @@
+.body-wrapper {
+  height: 100%;
+  background: transparent linear-gradient(119deg, #242942 0%, #171928 100%) 0% 0% no-repeat padding-box;
+  color: white;
+}
+
+.back-button-container {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.footer-logo-container {
+  position: absolute;
+  bottom: 5%;
+  left: 7%;
+}

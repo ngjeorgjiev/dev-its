@@ -1,0 +1,18 @@
+<app-layout-divider>
+  <ng-template #left>
+    <div class="row align-items-start">Please tap you phone to pay Image</div>
+  </ng-template>
+  <ng-template #right>
+    <h1 class="heading">Please tap <br/>your phone <br/>to pay</h1>
+    <div class="row align-items-start">
+      <div class="col">
+        <div>
+          <span class="small-heading"> Amount Due:</span><br />
+          X credits
+        </div>
+      </div>
+    </div>
+    <button (click)="valid()">Tap phone Valid</button>
+    <button (click)="invalid()">Tap phone Invalid</button>
+  </ng-template>
+</app-layout-divider>

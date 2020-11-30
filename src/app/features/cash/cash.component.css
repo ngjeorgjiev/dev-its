@@ -1,0 +1,65 @@
+.back-button-container {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.footer-logo-container {
+  position: absolute;
+  bottom: 5%;
+  left: 7%;
+}
+
+.insert-money-wrapper {
+  min-height: 100vh;
+}
+
+.insert-money-image {
+  overflow: hidden;
+  height: 648px;
+  margin-top: 30%;
+}
+
+.insert-money-header {
+  width: 100%;
+  top: 0%;
+}
+
+.insert-money-card {
+  width: 40%;
+  left: 33%;
+  top: 100%;
+  transform: rotate(180deg);
+  animation: cash-animate-up 4s infinite linear;
+}
+
+.insert-money-base {
+  width: 100%;
+  top: 0%;
+}
+
+.content-header {
+  padding-bottom: 250px;
+}
+
+@keyframes gradient-spread {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.gradient-background {
+  background: linear-gradient(271deg, #ffffff, #333333);
+  animation: gradient-spread 4s ease infinite;
+}
+
+.gradient-line {
+  position: absolute;
+    height: 80px;
+    top: 0;
+    left: 280px;
+}
+
+@keyframes cash-animate-up {0%{top:100%;} 20%{top:60%;} 40%{top:20%;} 60%{top:0%;} 80%{top:0%;} 100%{top:-40%;}}

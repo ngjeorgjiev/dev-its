@@ -1,0 +1,67 @@
+.footer-logo-container {
+  position: absolute;
+  bottom: 5%;
+  left: 7%;
+}
+
+.font-size-30 {
+  font-size: 30px;
+}
+
+.thank-you-wrapper {
+  min-height: 100vh;
+}
+
+.thank-you-image {
+  overflow: hidden;
+  height: 648px;
+  margin-top: 30%;
+}
+
+.thank-you-header {
+  width: 100%;
+  top: 0%;
+}
+
+.thank-you-card {
+  width: 60%;
+  left: 21%;
+  top: -40%;
+  animation: animate-down 4s infinite linear;
+}
+
+.thank-you-base {
+  width: 100%;
+  top: 0%;
+}
+
+.content-header {
+  padding-bottom: 250px;
+}
+
+@keyframes gradient-spread {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.gradient-background {
+  background: linear-gradient(271deg, #ffffff, #333333);
+  animation: gradient-spread 4s ease infinite;
+}
+
+.gradient-line {
+  position: absolute;
+  height: 80px;
+  top: 0;
+  left: 280px;
+}
+
+@keyframes animate-down {
+  0%{top:-40%;}
+  20%{top:0%;}
+  40%{top:20%;}
+  60%{top:20%; opacity: 0.8}
+  80%{top:60%; opacity: 0.4}
+  100%{top:100%; opacity: 0.2}
+}
