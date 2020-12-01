@@ -1,12 +1,25 @@
 <app-layout-divider>
+  <ng-template #static>
+    <div class="footer-logo-container">
+      Powered by <img src="assets/svg/footer-logo.svg" alt="image">
+    </div>
+  </ng-template>
   <ng-template #left>
-    <div class="row align-items-start">Valid Phone tap</div>
+    <div class="row invalid-nfc-wrapper">
+      <div class="col invalid-nfc-image">
+        <img class="position-absolute invalid-nfc-base" src="assets/svg/thank-you-base.svg" alt="image">
+        <img class="position-absolute invalid-nfc-background" src="assets/svg/nfc-payment-phone-large.svg" alt="image">
+        <img class="position-absolute invalid-nfc-beacon" src="assets/svg/nfc-payment-wallet-large.svg" alt="image">
+        <img class="position-absolute invalid-nfc-signal" src="assets/svg/nfc-payment-signal-large.svg" alt="image">
+        <img class="position-absolute invalid-nfc-icon" src="assets/svg/valid-pin-icon.svg" alt="image">
+      </div>
+    </div>
   </ng-template>
   <ng-template #right>
-    <div class="row align-items-start">
-      <p class="heading" (click)="valid()">Valid transaction</p>
+    <div class="row content-header" (click)="valid()">
+      <div class="col offset-md-3">
+        <h1 class="heading">Valid <br/>transaction</h1>
+      </div>
     </div>
   </ng-template>
 </app-layout-divider>
-
-

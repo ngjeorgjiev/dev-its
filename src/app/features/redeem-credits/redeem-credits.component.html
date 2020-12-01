@@ -1,18 +1,35 @@
 <app-layout-divider>
+  <ng-template #static>
+    <div class="back-button-container" (click)=goBack()>
+      <img src="assets/svg/back-button-bg.svg" alt="image">
+    </div>
+    <div class="footer-logo-container">
+      Powered by <img src="assets/svg/footer-logo.svg" alt="image">
+    </div>
+  </ng-template>
   <ng-template #left>
-    <div class="row align-items-start">Please tap you phone to pay Image</div>
+    <div class="row redeem-credits-wrapper">
+      <div class="col redeem-credits-image">
+        <img class="position-absolute redeem-credits-base" src="assets/svg/thank-you-base.svg" alt="image">
+        <img class="position-absolute redeem-credits-phone" src="assets/svg/redeem-credits-phone-icon.svg" alt="image">
+        <img class="position-absolute redeem-credits-signal" src="assets/svg/redeem-credits-signal.svg" alt="image">
+      </div>
+    </div>
   </ng-template>
   <ng-template #right>
-    <h1 class="heading">Please tap <br/>your phone <br/>to pay</h1>
-    <div class="row align-items-start">
-      <div class="col">
-        <div>
-          <span class="small-heading"> Amount Due:</span><br />
-          X credits
+    <div class="row content-header" (click)=invalid()>
+      <div class="col offset-md-3">
+        <h1 class="heading">Please tap<br/>your phone <br/>to pay</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col offset-md-3 pb-5">
+        <div class="position-relative">
+          <span class="small-heading mb-3">Amount Due:</span> <br />
+          <span class="currency">X credits</span>
+          <img class="gradient-line" src="assets/svg/insert-money-gradient.svg" alt="image">
         </div>
       </div>
     </div>
-    <button (click)="valid()">Tap phone Valid</button>
-    <button (click)="invalid()">Tap phone Invalid</button>
   </ng-template>
 </app-layout-divider>

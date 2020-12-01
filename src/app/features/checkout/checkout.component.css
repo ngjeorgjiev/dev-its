@@ -3,15 +3,6 @@
   z-index: 5;
   overflow: hidden;
 }
-#cash {
-  /* background: url('../../../assets/svg/card-checkout.svg'); */
-}
-#card {
-  /* background: url('../../../assets/svg/card-checkout.svg'); */
-}
-#nfc {
-  /* background: url('../../../assets/svg/card-checkout.svg'); */
-}
 
 .max-h-custom {
   max-height: 155px;

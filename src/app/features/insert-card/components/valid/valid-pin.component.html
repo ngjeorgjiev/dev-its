@@ -1,10 +1,23 @@
 <app-layout-divider>
+  <ng-template #static>
+    <div class="footer-logo-container">
+      Powered by <img src="assets/svg/footer-logo.svg" alt="image">
+    </div>
+  </ng-template>
   <ng-template #left>
-    <div class="row align-items-start">Valid Transaction Image</div>
+    <div class="row valid-pin-wrapper">
+      <div class="col valid-pin-image">
+        <img class="position-absolute valid-pin-base" src="assets/svg/thank-you-base.svg" alt="image">
+        <img class="position-absolute valid-pin-card" src="assets/svg/invalid-pin-card.svg" alt="image">
+        <img class="position-absolute valid-pin-icon" src="assets/svg/valid-pin-icon.svg" alt="image">
+      </div>
+    </div>
   </ng-template>
   <ng-template #right>
-    <div class="row align-items-start">
-      <p class="heading" (click)="thankYou()">Valid transaction</p>
+    <div class="row content-header" (click)="thankYou()">
+      <div class="col offset-md-3">
+        <h1 class="heading">Valid <br/>transaction</h1>
+      </div>
     </div>
   </ng-template>
 </app-layout-divider>

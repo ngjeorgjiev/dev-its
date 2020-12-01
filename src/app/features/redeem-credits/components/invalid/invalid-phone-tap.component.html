@@ -1,10 +1,34 @@
 <app-layout-divider>
+  <ng-template #static>
+    <div class="footer-logo-container">
+      Powered by <img src="assets/svg/footer-logo.svg" alt="image">
+    </div>
+  </ng-template>
   <ng-template #left>
-    <div class="row align-items-start">invalid Phone tap image</div>
+    <div class="row invalid-nfc-wrapper">
+      <div class="col invalid-nfc-image">
+        <img class="position-absolute invalid-nfc-base" src="assets/svg/thank-you-base.svg" alt="image">
+        <img class="position-absolute invalid-nfc-background" src="assets/svg/nfc-payment-phone-large.svg" alt="image">
+        <img class="position-absolute invalid-nfc-beacon" src="assets/svg/nfc-payment-wallet-large.svg" alt="image">
+        <img class="position-absolute invalid-nfc-signal" src="assets/svg/nfc-payment-signal-large.svg" alt="image">
+        <img class="position-absolute invalid-nfc-icon" src="assets/svg/invalid-pin-icon.svg" alt="image">
+      </div>
+    </div>
   </ng-template>
   <ng-template #right>
-    <div class="row align-items-start">
-      <p class="heading" (click)="invalid()">Invalid transaction</p>
+    <div class="row content-header" (click)="valid()">
+      <div class="col offset-md-3">
+        <h1 class="heading">Invalid <br/>transaction</h1>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="row">
+      <div class="col offset-md-3 pb-5">
+        <div class="position-relative py-3">
+          <span class="small-heading font-size-30 mb-3"> Please remove your phone and try again</span>
+          <img class="gradient-line" src="assets/svg/insert-money-gradient.svg" alt="image">
+        </div>
+      </div>
     </div>
   </ng-template>
 </app-layout-divider>

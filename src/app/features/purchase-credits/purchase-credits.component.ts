@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   templateUrl: './purchase-credits.component.html',
@@ -7,7 +8,11 @@ import { Router } from '@angular/router';
 })
 export class PurchaseCreditsComponent {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private location: Location) { }
+  
+  goBack(): void {
+    this.location.back();
+  }
 
   cash(): void {
     this.router.navigateByUrl('/checkout/cash');

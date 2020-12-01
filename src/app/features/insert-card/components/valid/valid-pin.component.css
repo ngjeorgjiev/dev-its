@@ -1,0 +1,51 @@
+.footer-logo-container {
+  position: absolute;
+  bottom: 5%;
+  left: 7%;
+}
+
+.content-header {
+  cursor: pointer;
+}
+
+.valid-pin-wrapper {
+  min-height: 100vh;
+}
+
+.valid-pin-image {
+  overflow: hidden;
+  height: 648px;
+  margin-top: 30%;
+}
+
+.valid-pin-base {
+  width: 100%;
+  top: 0%;
+}
+
+.valid-pin-icon {
+  width: 65%;
+  top: 34%;
+  left: 43%;
+  animation: valid-pin-animate-icon 5s infinite linear;
+}
+
+.valid-pin-card {
+  width: 75%;
+  top: 20%;
+  left: 18%;
+  transform: rotate(155deg);
+  animation: valid-pin-animate-card 5s infinite linear;
+}
+
+@keyframes valid-pin-animate-card {
+  0%{transform: rotate(180deg);}
+  50%{transform: rotate(155deg)}
+  100%{transform: rotate(180deg);}
+}
+
+@keyframes valid-pin-animate-icon {
+  0%{width: 65%;top: 34%;left: 43%;}
+  50%{width: 45%;top: 33%;left: 54%;}
+  100%{width: 65%;top: 34%;left: 43%;}
+}

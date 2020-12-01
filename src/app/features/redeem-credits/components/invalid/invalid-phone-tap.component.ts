@@ -9,7 +9,7 @@ export class InvalidPhoneTapComponent {
 
   constructor(private router: Router) { }
 
-  invalid(): void {
-    this.router.navigateByUrl('/checkout/nfc-payment/redeem-credits');
+  valid(): void {
+    this.router.navigateByUrl('/checkout/nfc-payment/redeem-credits/valid');
   }
 }
