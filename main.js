@@ -314,10 +314,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _features_language_picker_language_picker_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./features/language-picker/language-picker.component */ "PMlu");
 /* harmony import */ var _core_core_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./core/core.module */ "pKmL");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common/http */ "tk/3");
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../environments/environment */ "AytR");
-/* harmony import */ var _transloco_loader__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./transloco.loader */ "xHOQ");
-/* harmony import */ var _ngneat_transloco__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @ngneat/transloco */ "QPBi");
-
+/* harmony import */ var _transloco_loader__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./transloco.loader */ "xHOQ");
+/* harmony import */ var _ngneat_transloco__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @ngneat/transloco */ "QPBi");
 
 
 
@@ -333,24 +331,23 @@ class AppModule {
 }
 AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]] });
 AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function AppModule_Factory(t) { return new (t || AppModule)(); }, providers: [{
-            provide: _ngneat_transloco__WEBPACK_IMPORTED_MODULE_10__["TRANSLOCO_CONFIG"],
+            provide: _ngneat_transloco__WEBPACK_IMPORTED_MODULE_9__["TRANSLOCO_CONFIG"],
             useValue: {
                 availableLangs: ['en', 'arabic'],
                 listenToLangChange: true,
                 defaultLang: 'en',
                 fallbackLang: 'arabic',
-                prodMode: _environments_environment__WEBPACK_IMPORTED_MODULE_8__["environment"].production,
                 missingHandler: {
                     logMissingKey: true
                 }
             }
-        }, _transloco_loader__WEBPACK_IMPORTED_MODULE_9__["translocoLoader"]], imports: [[
+        }, _transloco_loader__WEBPACK_IMPORTED_MODULE_8__["translocoLoader"]], imports: [[
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
             _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__["BrowserAnimationsModule"],
             _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
             _core_core_module__WEBPACK_IMPORTED_MODULE_6__["CoreModule"],
             _angular_common_http__WEBPACK_IMPORTED_MODULE_7__["HttpClientModule"],
-            _ngneat_transloco__WEBPACK_IMPORTED_MODULE_10__["TranslocoModule"]
+            _ngneat_transloco__WEBPACK_IMPORTED_MODULE_9__["TranslocoModule"]
         ]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
         _features_language_picker_language_picker_component__WEBPACK_IMPORTED_MODULE_5__["LanguagePickerComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -358,7 +355,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
         _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
         _core_core_module__WEBPACK_IMPORTED_MODULE_6__["CoreModule"],
         _angular_common_http__WEBPACK_IMPORTED_MODULE_7__["HttpClientModule"],
-        _ngneat_transloco__WEBPACK_IMPORTED_MODULE_10__["TranslocoModule"]] }); })();
+        _ngneat_transloco__WEBPACK_IMPORTED_MODULE_9__["TranslocoModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
@@ -372,21 +369,20 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                     _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
                     _core_core_module__WEBPACK_IMPORTED_MODULE_6__["CoreModule"],
                     _angular_common_http__WEBPACK_IMPORTED_MODULE_7__["HttpClientModule"],
-                    _ngneat_transloco__WEBPACK_IMPORTED_MODULE_10__["TranslocoModule"]
+                    _ngneat_transloco__WEBPACK_IMPORTED_MODULE_9__["TranslocoModule"]
                 ],
                 providers: [{
-                        provide: _ngneat_transloco__WEBPACK_IMPORTED_MODULE_10__["TRANSLOCO_CONFIG"],
+                        provide: _ngneat_transloco__WEBPACK_IMPORTED_MODULE_9__["TRANSLOCO_CONFIG"],
                         useValue: {
                             availableLangs: ['en', 'arabic'],
                             listenToLangChange: true,
                             defaultLang: 'en',
                             fallbackLang: 'arabic',
-                            prodMode: _environments_environment__WEBPACK_IMPORTED_MODULE_8__["environment"].production,
                             missingHandler: {
                                 logMissingKey: true
                             }
                         }
-                    }, _transloco_loader__WEBPACK_IMPORTED_MODULE_9__["translocoLoader"]],
+                    }, _transloco_loader__WEBPACK_IMPORTED_MODULE_8__["translocoLoader"]],
                 bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
             }]
     }], null, null); })();
