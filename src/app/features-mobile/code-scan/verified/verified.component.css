@@ -1,0 +1,49 @@
+.footer-logo-container {
+  font-size: 10px;
+  padding: 40px 0 20px 0;
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+.content-header h1 {
+  font-family: "Montserrat";
+  font-size: 40px;
+  padding: 50px 0;
+}
+
+.unverified-image {
+  overflow: hidden;
+  height: 385px;
+  margin-top: 15% 0;
+}
+
+.unverified-base {
+  width: 90%;
+  top: 0%;
+}
+
+.unverified-icon {
+  width: 38%;
+  top: 45%;
+  left: 56%;
+  animation: unverified-animate-icon-mobile 5s infinite linear;
+}
+
+.unverified-card {
+  width: 38%;
+  top: 26%;
+  left: 33%;
+  animation: unverified-animate-card-mobile 5s infinite linear;
+}
+
+@keyframes unverified-animate-card-mobile {
+  0%{transform: rotate(0);}
+  50%{transform: rotate(-15deg)}
+  100%{transform: rotate(0);}
+}
+
+@keyframes unverified-animate-icon-mobile {
+  0%{width: 38%;top: 45%;left: 56%;}
+  50%{width: 28%;top: 40%;left: 64%;}
+  100%{width: 38%;top: 45%;left: 56%;}
+}

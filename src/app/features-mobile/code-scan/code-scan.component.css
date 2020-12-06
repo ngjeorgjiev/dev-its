@@ -1,0 +1,116 @@
+.back-button-container {
+  cursor: pointer;
+  position: absolute;
+  top: -50px;
+  left: -35px;
+  z-index: 20;
+}
+
+.back-button-container img {
+  width: 80%;
+}
+
+.footer-logo-container {
+  font-size: 10px;
+  padding: 40px 0 20px 0;
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+.content-header h1 {
+  font-family: "Montserrat";
+  font-size: 40px;
+  padding: 25% 0 30px 0;
+}
+
+.small-heading {
+  padding-bottom: 30px;
+}
+
+.code-scan-image {
+  overflow: hidden;
+  height: 385px;
+  margin-top: 15% 0;
+}
+
+.code-scan-base {
+  width: 90%;
+  top: 0%;
+}
+
+.code-scan-base-image {
+  top: 27%;
+  left: 30%;
+}
+
+.code-scan-animate {
+  top: 100px;
+  left: 27%;
+  animation: code-scan-animate-line-mobile 5s infinite linear;
+}
+
+.code-scan-icon {
+  width: 48%;
+  top: 23%;
+  left: 26%;
+  animation: code-scan-animate-icon-mobile 5s infinite linear;
+}
+
+@keyframes code-scan-animate-icon-mobile {
+  0%{width: 48%;top: 23%;left: 26%;}
+  50%{width: 50%;top: 22%;left: 25%;}
+  100%{width: 48%;top: 23%;left: 26%;}
+}
+
+@keyframes code-scan-animate-line-mobile {
+  0%{top: 100px;}
+  50%{top: 250px;}
+  100%{top: 100px;}
+}
+
+.link {
+  height: 30%;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.side-content {
+  position: absolute;
+  font-size: 30px;
+  font-family: "Montserrat";
+  right: 37%;
+  padding-top: 20px;
+}
+
+.card-text-content {
+  position: absolute;
+  font-size: 20px;
+  font-family: "Montserrat";
+  top: 43%;
+  left: 9%;
+}
+
+.code-scan-validation {
+  height: 90vh;
+}
+
+.progress-bar {
+  height: 30px;
+  background-color: rgb(14, 216, 216);
+  width: 350px;
+  border-radius: 25px;
+}
+
+.progress-heading {
+  color: rgb(14, 216, 216);
+  font-size: 20px;
+  font-family: "Montserrat";
+  padding-top: 50%;
+  padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .scalable-image {
+    width: 100%;
+  }
+}

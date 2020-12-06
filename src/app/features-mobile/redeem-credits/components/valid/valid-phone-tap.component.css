@@ -1,0 +1,75 @@
+.footer-logo-container {
+  font-size: 10px;
+  padding: 40px 0 20px 0;
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+.content-header h1 {
+  font-family: "Montserrat";
+  font-size: 40px;
+  padding: 50px 0;
+}
+
+.invalid-nfc-image {
+  overflow: hidden;
+  height: 385px;
+  margin-top: 15% 0;
+}
+
+.invalid-nfc-base {
+  width: 90%;
+  top: 0%;
+}
+
+.invalid-nfc-icon {
+  width: 36%;
+  top: 60%;
+  left: 46%;
+  animation: valid-nfc-animate-icon-mobile 4s infinite linear;
+}
+
+.invalid-nfc-background {
+  width: 63%;
+  top: 2%;
+  left: 15%;
+}
+
+.invalid-nfc-beacon {
+  width: 50%;
+  top: 24%;
+  left: 8%;
+  animation: valid-nfc-animate-beacon-mobile 4s infinite linear;
+}
+
+.invalid-nfc-signal {
+  width: 16%;
+  top: 38%;
+  left: 54%;
+  animation: valid-nfc-animate-signal-mobile 4s infinite linear;
+}
+
+.gradient-line {
+  position: absolute;
+  height: 60px;
+  top: 0;
+  left: 280px;
+}
+
+@keyframes valid-nfc-animate-icon-mobile {
+  0%{width: 36%;top: 60%;left: 46%;}
+  50%{width: 48%;top: 55%;left: 43%;}
+  100%{width: 36%;top: 60%;left: 46%;}
+}
+
+@keyframes valid-nfc-animate-beacon-mobile {
+  0%{left: 8%;}
+  50%{left: 4%;}
+  100%{left: 8%;}
+}
+
+@keyframes valid-nfc-animate-signal-mobile {
+  0%{left: 54%;}
+  50%{left: 60%;}
+  100%{left: 54%;}
+}

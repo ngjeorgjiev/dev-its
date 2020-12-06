@@ -1,0 +1,12 @@
+{
+  "please": "Please tap",
+  "yourPhone": "your phone",
+  "toPay": "to pay",
+  "amountDue":"Amount Due",
+  "credits": "credits",
+  "invalid":"Invalid",
+  "valid":"Valid",
+  "transaction":"transaction",
+  "msg":"Please remove your phone and try again",
+  "poweredBy": "powered By"
+}

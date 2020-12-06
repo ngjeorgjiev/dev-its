@@ -1,14 +1,14 @@
 <div class="language-picker-wrapper">
   <div class="row english">
-    <div class="content-wrapper" routerLink="/checkout">
-      <span>Continue in English</span>
+    <div class="content-wrapper" (click)="changeSiteLanguage('en')">
+      <span transloco="languageContinue"  translocoLang="en"></span>
       <img src="assets/svg/language-separator.svg" alt="image">
     </div>
   </div>
-  <div class="row arabic"n>
-    <div class="content-wrapper" routerLink="/checkout">
+  <div class="row arabic">
+    <div class="content-wrapper" (click)="changeSiteLanguage('arabic')">
       <img src="assets/svg/language-separator.svg" alt="image">
-      <span>تواصل بالعربية</span>
+      <span transloco="languageContinue"  translocoLang="arabic"></span>
     </div>
   </div>
 </div>

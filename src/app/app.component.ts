@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
-import { slideInAnimation } from "../app/helpers/animations";
+import { slideInAnimation } from '../app/helpers/animations';
 import { Location } from '@angular/common';
+import { TranslocoService } from '@ngneat/transloco';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,10 +11,16 @@ import { Location } from '@angular/common';
   animations: [ slideInAnimation ]
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'ITS';
-  constructor(private location: Location) {}
+  constructor(private location: Location, private service: TranslocoService) {}
 
+  ngOnInit(): void {
+    const language = localStorage.getItem('language');
+    if (language) {
+      this.service.setActiveLang(language);
+    }
+  }
   goBack(): void {
     this.location.back();
   }
@@ -23,7 +30,7 @@ export class AppComponent {
   }
 
 
-  prepareRoute(outlet: RouterOutlet) {
+  prepareRoute(outlet: RouterOutlet): void {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData["animation"]
   }
 }

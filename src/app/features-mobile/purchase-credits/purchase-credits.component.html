@@ -1,0 +1,44 @@
+<app-layout-divider>
+  <ng-template #static>
+    <div class="back-button-container" (click)=goBack()>
+      <img src="assets/svg/back-button-bg.svg" alt="image">
+    </div>
+  </ng-template>
+  <ng-template #left>
+    <div class="row position-relative purchase-credits-image-wrapper">
+      <span class="rotate-50-y rotating-header position-absolute">{{ 'required' | transloco }}</span>
+      <span class="rotate-50-y rotating-credits position-absolute">X {{ 'credits' | transloco }}</span>
+      <img class="rotate-50-y m-auto" src="assets/svg/nfc-rotating-image-empty.svg" alt="image">
+      <img class="rotate-50-y m-auto rotating-medal position-absolute" src="assets/svg/nfc-medal-empty.svg" alt="image">
+      <img class="m-auto rotating-star position-absolute" src="assets/svg/nfc-star-icon.svg" alt="image">
+    </div>
+  </ng-template>
+  <ng-template #right>
+    <div class="link position-relative" id="cash" (click)="cash()">
+      <span class="card-text-content">{{ 'cash' | transloco }}</span>
+      <img class="pt-3 scalable-image" src="assets/svg/card-background.svg" alt="image">
+      <div class="rotating-cash">
+        <img class="position-absolute cash-background" src="assets/svg/cash-background-phone.svg" alt="image">
+        <img class="position-absolute cash-rotating-circle" src="assets/svg/cash-rotating-circle-v2.svg" alt="image">
+      </div>
+      <div class="rotating-cash-copy">
+        <img class="position-absolute cash-background" src="assets/svg/cash-background-phone.svg" alt="image">
+        <img class="position-absolute cash-rotating-circle" src="assets/svg/cash-rotating-circle-v2.svg" alt="image">
+      </div>
+    </div>
+    <div class="link position-relative" id="card" (click)="card()">
+      <span class="card-text-content">{{ 'card' | transloco }}</span>
+      <img class="pt-3 scalable-image" src="assets/svg/card-background.svg" alt="image">
+      <div class="rotating-card">
+        <img class="position-absolute card-base" src="assets/svg/card-base-icon.svg" alt="image">
+        <img class="position-absolute card-phone" src="assets/svg/card-phone-icon.svg" alt="image">
+      </div>
+    </div>
+    <div class="side-content pr-2">
+      <span>SAR <strong>10.00</strong></span>
+    </div>
+    <div class="footer-logo-container">
+      {{ 'poweredBy' | transloco }} <img src="assets/svg/footer-logo.svg" alt="image">
+    </div>
+  </ng-template>
+</app-layout-divider>

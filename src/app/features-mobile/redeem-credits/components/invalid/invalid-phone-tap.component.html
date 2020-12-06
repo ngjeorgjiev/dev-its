@@ -1,0 +1,31 @@
+<app-layout-divider>
+  <ng-template #static>
+  </ng-template>
+  <ng-template #left>
+    <div class="row content-header" (click)="valid()">
+      <div class="w-100 text-center">
+        <h1 class="heading">{{ 'invalid' | transloco }} <br/>{{ 'transaction' | transloco }}</h1>
+      </div>
+    </div>
+    <div class="row invalid-nfc-wrapper">
+      <div class="col invalid-nfc-image">
+        <img class="position-absolute invalid-nfc-base" src="assets/svg/thank-you-base.svg" alt="image">
+        <img class="position-absolute invalid-nfc-background" src="assets/svg/nfc-payment-phone-large.svg" alt="image">
+        <img class="position-absolute invalid-nfc-beacon" src="assets/svg/nfc-payment-wallet-large.svg" alt="image">
+        <img class="position-absolute invalid-nfc-signal" src="assets/svg/nfc-payment-signal-large.svg" alt="image">
+        <img class="position-absolute invalid-nfc-icon" src="assets/svg/invalid-pin-icon.svg" alt="image">
+      </div>
+    </div>
+  </ng-template>
+  <ng-template #right>
+    <div class="row" (click)="valid()">
+      <div class="position-relative py-3 w-100 text-center my-3">
+        <span class="small-heading font-size-30"> {{ 'msg' | transloco }}</span>
+        <img class="gradient-line" src="assets/svg/insert-money-gradient.svg" alt="image">
+      </div>
+    </div>
+    <div class="footer-logo-container">
+      {{ 'poweredBy' | transloco }} <img src="assets/svg/footer-logo.svg" alt="image">
+    </div>
+  </ng-template>
+</app-layout-divider>

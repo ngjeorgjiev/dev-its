@@ -1,0 +1,36 @@
+<app-layout-divider>
+  <ng-template #static>
+    <div *ngIf="!validating" class="back-button-container" (click)=goBack()>
+      <img src="assets/svg/back-button-bg.svg" alt="image">
+    </div>
+  </ng-template>
+  <ng-template #left>
+    <div [hidden]="validating" class="row content-header" (click)="goToValidate()">
+      <h1 class="w-100 text-center">QR code scan</h1>
+    </div>
+    <div [hidden]="validating" class="row content-header">
+      <span class="small-heading w-100 text-center">Align QR code with the frame to scan</span>
+    </div>
+    <div [hidden]="validating" class="row code-scan-wrapper">
+      <div class="col code-scan-image">
+        <img class="position-absolute code-scan-base" src="assets/svg/thank-you-base.svg" alt="image">
+        <img class="position-absolute code-scan-animate" src="assets/svg/code-scan-qr.svg" alt="image">
+        <img class="position-absolute code-scan-icon" src="assets/svg/code-scan-qr-mask.svg" alt="image">
+        <img [hidden]="scanning" class="position-absolute code-scan-base-image" src="assets/svg/code-scan-qr-wrapper.svg" alt="image">
+      </div>
+    </div>
+    <div [hidden]="!validating" class="code-scan-validation flex flex-column text-center" (click)="goToInvalid()">
+      <div class="progress-heading">Validating Code</div>
+      <div class="progress-bar" [style.width.px]="progress*10"></div>
+    </div>
+  </ng-template>
+  <ng-template #right>
+    <div [hidden]="scanning" class="link position-relative mt-3" id="cash" (click)="scanCode()">
+      <span class="card-text-content">Scan Code</span>
+      <img class="pt-3 scalable-image" src="assets/svg/card-background.svg" alt="image">
+    </div>
+    <div class="footer-logo-container">
+      Powered by <img src="assets/svg/footer-logo.svg" alt="image">
+    </div>
+  </ng-template>
+</app-layout-divider>

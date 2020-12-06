@@ -1,0 +1,50 @@
+.footer-logo-container {
+  font-size: 10px;
+  padding: 40px 0 20px 0;
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+.content-header h1 {
+  font-family: "Montserrat";
+  font-size: 40px;
+  padding: 50px 0;
+}
+
+.invalid-pin-image {
+  overflow: hidden;
+  height: 385px;
+  margin-top: 15% 0;
+}
+
+.invalid-pin-base {
+  width: 90%;
+  top: 0%;
+}
+
+.invalid-pin-icon {
+  width: 38%;
+  top: 45%;
+  left: 56%;
+  animation: invalid-pin-animate-icon-mobile 5s infinite linear;
+}
+
+.invalid-pin-card {
+  width: 75%;
+  top: 20%;
+  left: 18%;
+  transform: rotate(155deg);
+  animation: invalid-pin-animate-card-mobile 5s infinite linear;
+}
+
+@keyframes invalid-pin-animate-card-mobile {
+  0%{transform: rotate(180deg);}
+  50%{transform: rotate(155deg)}
+  100%{transform: rotate(180deg);}
+}
+
+@keyframes invalid-pin-animate-icon-mobile {
+  0%{width: 38%;top: 45%;left: 56%;}
+  50%{width: 28%;top: 40%;left: 64%;}
+  100%{width: 38%;top: 45%;left: 56%;}
+}

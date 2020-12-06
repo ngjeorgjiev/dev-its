@@ -55,3 +55,18 @@ span {
   opacity: 1;
   width: 50%;
 }
+
+@media only screen and (max-width: 900px) {
+  .arabic span {
+    padding-right: 20px;
+    font: normal normal 300 20px/27px "Montserrat-Regular";
+  }
+
+  .arabic img, .english img {
+    width: 270px;
+  }
+
+  .english span {
+    font: normal normal 300 20px/27px "Montserrat-Regular";
+  }
+}

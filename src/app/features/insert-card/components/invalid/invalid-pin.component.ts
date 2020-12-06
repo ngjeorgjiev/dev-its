@@ -1,15 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
   templateUrl: './invalid-pin.component.html',
   styleUrls: ['./invalid-pin.component.css']
 })
-export class InvalidPinComponent {
+export class InvalidPinComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  valid(): void {
-    this.router.navigateByUrl('/checkout/card/insert-card/valid');
+  ngOnInit(): void {
+    setTimeout( () => {
+      this.router.navigateByUrl('/checkout/card/insert-card/valid');
+    }, 1500);
   }
 }

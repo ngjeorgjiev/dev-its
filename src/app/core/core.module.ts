@@ -3,20 +3,20 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { EnsureModuleLoadedOnceGuard } from './ensure-module-loaded-once.guard';
-import { HeaderInterceptor } from './interceptors/header.interceptor';
 import { HandleHttpErrorInterceptor } from './interceptors/handle-http-error.interceptor';
+import { ViewService } from './services/view.service';
 
 @NgModule({
   imports: [CommonModule, HttpClientModule],
   exports: [HttpClientModule],
   declarations: [],
   providers: [
+    ViewService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: HandleHttpErrorInterceptor,
       multi: true,
     },
-    { provide: HTTP_INTERCEPTORS, useClass: HeaderInterceptor, multi: true },
   ],
 })
 export class CoreModule extends EnsureModuleLoadedOnceGuard {

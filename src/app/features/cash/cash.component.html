@@ -4,29 +4,30 @@
       <img src="assets/svg/back-button-bg.svg" alt="image">
     </div>
     <div class="footer-logo-container">
-      Powered by <img src="assets/svg/footer-logo.svg" alt="image">
+      {{ 'poweredBy' | transloco }}<img src="assets/svg/footer-logo.svg" alt="image">
     </div>
   </ng-template>
   <ng-template #left>
     <div class="row insert-money-wrapper">
       <div class="col insert-money-image">
-        <img class="position-absolute insert-money-base" src="assets/svg/insert-money-base.svg" alt="image">
+        <img class="position-absolute insert-money-base" src="assets/svg/box-wrapper-border-mask.svg" alt="image">
+        <img class="position-absolute insert-money-base" src="assets/svg/box-wrapper-header-large.svg" alt="image">
+        <img class="position-absolute insert-money-base-tip" src="assets/svg/box-wrapper-header-small.svg" alt="image">
         <img class="position-absolute insert-money-card" src="assets/svg/insert-money-card.svg" alt="image">
-        <img class="position-absolute insert-money-header" src="assets/svg/insert-money-header.svg" alt="image">
       </div>
     </div>
   </ng-template>
   <ng-template #right>
     <div class="row content-header" (click)="insertMoney()">
       <div class="col offset-md-3">
-        <h1 class="heading">Please <br/>insert <br/>money</h1>
+        <h1 class="heading">{{ 'please' | transloco }} <br/>{{ 'insert' | transloco }} <br/>{{ 'money' | transloco }}</h1>
       </div>
     </div>
     <div class="row">
       <div class="col offset-md-3 pb-5">
         <div class="position-relative">
-          <span class="small-heading mb-3"> Amount Paid:</span> <br />
-          <span class="currency">SAR</span><span class="price-tag">0.00</span>
+          <span class="small-heading mb-3"> {{ 'amountPaid' | transloco }}:</span> <br />
+          <span class="currency">{{ 'amount' | transloco }}</span><span class="price-tag">0.00</span>
           <img class="gradient-line" src="assets/svg/insert-money-gradient.svg" alt="image">
         </div>
       </div>
@@ -34,8 +35,8 @@
     <div class="row">
       <div class="col offset-md-3">
         <div class="position-relative">
-          <span class="small-heading mb-3"> Amount Due:</span> <br />
-          <span class="currency">SAR</span> <span class="price-tag">30.00</span>
+          <span class="small-heading mb-3"> {{ 'amountDue' | transloco }}:</span> <br />
+          <span class="currency">{{ 'amount' | transloco }}</span> <span class="price-tag">30.00</span>
           <img class="gradient-line" src="assets/svg/insert-money-gradient.svg" alt="image">
         </div>
       </div>

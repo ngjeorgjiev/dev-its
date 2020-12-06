@@ -7,6 +7,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LanguagePickerComponent } from './features/language-picker/language-picker.component';
 import { CoreModule } from './core/core.module';
+import { HttpClientModule } from '@angular/common/http';
+import { environment } from '../environments/environment';
+import { translocoLoader } from './transloco.loader';
+import { TranslocoModule, TRANSLOCO_CONFIG, TranslocoConfig } from '@ngneat/transloco';
 
 @NgModule({
   declarations: [
@@ -17,9 +21,20 @@ import { CoreModule } from './core/core.module';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    CoreModule
+    CoreModule,
+    HttpClientModule,
+    TranslocoModule
   ],
-  providers: [],
+  providers: [{
+      provide: TRANSLOCO_CONFIG,
+      useValue: {
+        listenToLangChange: true,
+        defaultLang: 'en',
+        prodMode: environment.production
+      } as TranslocoConfig
+    },
+    translocoLoader
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

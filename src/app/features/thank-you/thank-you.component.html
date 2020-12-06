@@ -1,28 +1,33 @@
 <app-layout-divider>
   <ng-template #static>
     <div class="footer-logo-container">
-      Powered by <img src="assets/svg/footer-logo.svg" alt="image">
+      {{ 'poweredBy' | transloco }} <img src="assets/svg/footer-logo.svg" alt="image">
     </div>
   </ng-template>
   <ng-template #left>
     <div class="row thank-you-wrapper">
       <div class="col thank-you-image">
-        <img class="position-absolute thank-you-base" src="assets/svg/thank-you-base.svg" alt="image">
+        <img class="position-absolute thank-you-base" src="assets/svg/box-wrapper-border-mask.svg" alt="image">
+        <img class="position-absolute thank-you-base" src="assets/svg/box-wrapper-header-large.svg" alt="image">
+        <img class="position-absolute thank-you-base-tip" src="assets/svg/box-wrapper-header-small.svg" alt="image">
         <img class="position-absolute thank-you-card" src="assets/svg/thank-you-receipt.svg" alt="image">
-        <img class="position-absolute thank-you-header" src="assets/svg/insert-money-header.svg" alt="image">
       </div>
     </div>
   </ng-template>
   <ng-template #right>
     <div class="row content-header">
       <div class="col offset-md-3">
-        <h1 class="heading">Thank you <br/>for using <br/>our services!</h1>
+        <h1 class="heading">
+          {{ 'thankYou' | transloco }}<br/>
+          {{ 'forUsing' | transloco }} <br/>
+          {{ 'ourServices' | transloco }}
+        </h1>
       </div>
     </div>
     <div class="row">
       <div class="col offset-md-3 pb-5">
         <div class="position-relative py-3">
-          <span class="small-heading font-size-30 mb-3"> Keep your receipt.</span>
+          <span class="small-heading font-size-30 mb-3">   {{ 'keepYourReceipt' | transloco }}</span>
           <img class="gradient-line" src="assets/svg/insert-money-gradient.svg" alt="image">
         </div>
       </div>
@@ -30,7 +35,9 @@
     <div class="row">
       <div class="col offset-md-3">
         <div class="position-relative">
-          <span class="font-size-30">Return the trolley within X minutes <br/>and get a reward of SAR X</span>
+          <span class="font-size-30">{{ 'return' | transloco }} X {{ 'minutes' | transloco }}
+            <br/>
+            {{ 'andGetReward' | transloco }} SAR X</span>
         </div>
       </div>
     </div>

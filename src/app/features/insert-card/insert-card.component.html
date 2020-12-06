@@ -4,22 +4,81 @@
       <img src="assets/svg/back-button-bg.svg" alt="image">
     </div>
     <div class="footer-logo-container">
-      Powered by <img src="assets/svg/footer-logo.svg" alt="image">
+       {{ 'poweredBy' | transloco }} <img src="assets/svg/footer-logo.svg" alt="image">
     </div>
   </ng-template>
   <ng-template #left>
     <div class="row insert-pin-wrapper">
       <div class="col insert-pin-image">
         <img class="position-absolute insert-pin-input" src="assets/svg/pin-input.svg" alt="image">
-        <img class="position-absolute insert-pin-keyboard" src="assets/svg/pin-keyboard-temp.svg" alt="image">
+        <span [hidden]="pinValue.length < 1" class="input-masked-values first">*</span>
+        <span [hidden]="pinValue.length < 2" class="input-masked-values second">*</span>
+        <span [hidden]="pinValue.length < 3" class="input-masked-values third">*</span>
+        <span [hidden]="pinValue.length < 4" class="input-masked-values fourth">*</span>
+        <div class="pin-keyboard">
+          <div class="row pin-keyboard-row position-relative">
+            <div class="col col-xs-4">
+              <img class="insert-pin-keyboard insert-pin-digit" src="assets/svg/enter-pin-button-v2.svg" alt="image" (click)="numberInput('1')">
+              <span class="insert-pin-value" (click)="numberInput('1')">1</span>
+            </div>
+            <div class="col col-xs-4">
+              <img class="insert-pin-keyboard insert-pin-digit" src="assets/svg/enter-pin-button-v2.svg" alt="image" (click)="numberInput('2')">
+              <span class="insert-pin-value" (click)="numberInput('2')">2</span>
+            </div>
+            <div class="col col-xs-4">
+              <img class="insert-pin-keyboard insert-pin-digit" src="assets/svg/enter-pin-button-v2.svg" alt="image" (click)="numberInput('3')">
+              <span class="insert-pin-value" (click)="numberInput('3')">3</span>
+            </div>
+          </div>
+          <div class="row pin-keyboard-row position-relative">
+            <div class="col col-xs-4">
+              <img class="insert-pin-keyboard insert-pin-digit" src="assets/svg/enter-pin-button-v2.svg" alt="image" (click)="numberInput('4')">
+              <span class="insert-pin-value" (click)="numberInput('4')">4</span>
+            </div>
+            <div class="col col-xs-4">
+              <img class="insert-pin-keyboard insert-pin-digit" src="assets/svg/enter-pin-button-v2.svg" alt="image" (click)="numberInput('5')">
+              <span class="insert-pin-value" (click)="numberInput('5')">5</span>
+            </div>
+            <div class="col col-xs-4">
+              <img class="insert-pin-keyboard insert-pin-digit" src="assets/svg/enter-pin-button-v2.svg" alt="image" (click)="numberInput('6')">
+              <span class="insert-pin-value" (click)="numberInput('6')">6</span>
+            </div>
+          </div>
+          <div class="row pin-keyboard-row position-relative">
+            <div class="col col-xs-4">
+              <img class="insert-pin-keyboard insert-pin-digit" src="assets/svg/enter-pin-button-v2.svg" alt="image" (click)="numberInput('7')">
+              <span class="insert-pin-value" (click)="numberInput('7')">7</span>
+            </div>
+            <div class="col col-xs-4">
+              <img class="insert-pin-keyboard insert-pin-digit" src="assets/svg/enter-pin-button-v2.svg" alt="image" (click)="numberInput('8')">
+              <span class="insert-pin-value" (click)="numberInput('8')">8</span>
+            </div>
+            <div class="col col-xs-4">
+              <img class="insert-pin-keyboard insert-pin-digit" src="assets/svg/enter-pin-button-v2.svg" alt="image" (click)="numberInput('9')">
+              <span class="insert-pin-value" (click)="numberInput('9')">9</span>
+            </div>
+          </div>
+          <div class="row pin-keyboard-row position-relative">
+            <div class="col offset-md-4 col-xs-4">
+              <img class="insert-pin-keyboard insert-pin-digit" src="assets/svg/enter-pin-button-v2.svg" alt="image" (click)="numberInput('0')">
+              <span class="insert-pin-value" (click)="numberInput('0')">0</span>
+            </div>
+            <div class="col col-xs-4">
+              <img class="insert-pin-keyboard insert-pin-digit" src="assets/svg/enter-pin-reset.svg" alt="image" (click)="numberInput('reset')">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </ng-template>
   <ng-template #right>
     <div class="row content-header" (click)=invalid()>
       <div class="col offset-md-3">
-        <h1 class="heading">Please <br/>enter your <br/>PIN</h1>
+        <h1 class="heading"> {{ 'please' | transloco }} <br/> {{ 'enterPin' | transloco }} <br/> {{ 'pin' | transloco }}</h1>
       </div>
+    </div>
+    <div [hidden]="pinValue === ''" class="col insert-pin-enter" (click)=invalid()>
+      <img src="assets/svg/enter-pin-next.svg" alt="image">
     </div>
   </ng-template>
 </app-layout-divider>

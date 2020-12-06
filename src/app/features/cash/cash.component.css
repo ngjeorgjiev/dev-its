@@ -40,6 +40,12 @@
   top: 0%;
 }
 
+.insert-money-base-tip {
+  width: 100%;
+  top: -2%;
+  z-index: 25;
+}
+
 .content-header {
   padding-bottom: 250px;
 }

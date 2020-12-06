@@ -4,7 +4,7 @@
       <img src="assets/svg/back-button-bg.svg" alt="image">
     </div>
     <div class="footer-logo-container">
-      Powered by <img src="assets/svg/footer-logo.svg" alt="image">
+      {{ 'poweredBy' | transloco }} <img src="assets/svg/footer-logo.svg" alt="image">
     </div>
   </ng-template>
   <ng-template #left>
@@ -19,14 +19,14 @@
   <ng-template #right>
     <div class="row content-header" (click)=invalid()>
       <div class="col offset-md-3">
-        <h1 class="heading">Please tap<br/>your phone <br/>to pay</h1>
+        <h1 class="heading">  {{ 'please' | transloco }} <br/>  {{ 'yourPhone' | transloco }}  <br/>  {{ 'toPay' | transloco }} </h1>
       </div>
     </div>
     <div class="row">
       <div class="col offset-md-3 pb-5">
         <div class="position-relative">
-          <span class="small-heading mb-3">Amount Due:</span> <br />
-          <span class="currency">X credits</span>
+          <span class="small-heading mb-3">  {{ 'amountDue' | transloco }} :</span> <br />
+          <span class="currency">X   {{ 'credits' | transloco }} </span>
           <img class="gradient-line" src="assets/svg/insert-money-gradient.svg" alt="image">
         </div>
       </div>

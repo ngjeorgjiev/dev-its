@@ -1,0 +1,22 @@
+<app-layout-divider>
+  <ng-template #static>
+  </ng-template>
+  <ng-template #left>
+    <div class="row content-header" (click)="thankYou()">
+      <h1 class="w-100 text-center">{{ 'valid' | transloco }} {{ 'transaction' | transloco }}</h1>
+    </div>
+    <div class="row valid-pin-wrapper">
+      <div class="col valid-pin-image">
+        <img class="position-absolute valid-pin-base" src="assets/svg/thank-you-base.svg" alt="image">
+        <img class="position-absolute valid-pin-card" src="assets/svg/invalid-pin-card.svg" alt="image">
+        <img class="position-absolute valid-pin-icon" src="assets/svg/valid-pin-icon.svg" alt="image">
+      </div>
+    </div>
+  </ng-template>
+  <ng-template #right>
+    <div class="footer-logo-container">
+      {{ 'poweredBy' | transloco }}<img src="assets/svg/footer-logo.svg" alt="image">
+    </div>
+  </ng-template>
+</app-layout-divider>
+

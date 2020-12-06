@@ -1,0 +1,36 @@
+<app-layout-divider>
+  <ng-template #static>
+    <div class="back-button-container" (click)=goBack()>
+      <img src="assets/svg/back-button-bg.svg" alt="image">
+    </div>
+  </ng-template>
+  <ng-template #left>
+    <div class="row position-relative nfc-images-wrapper">
+      <img class="m-auto position-absolute input-mask" src="assets/svg/nfc-header-input.svg" alt="image">
+      <img class="m-auto position-absolute input-icon" src="assets/svg/nfc-medal-small.svg" alt="image">
+      <span class="input-credits position-absolute">Y {{ 'credits' | transloco }}  {{ 'available' | transloco }}</span>
+      <span class="rotate-50-y rotating-header position-absolute">{{ 'required' | transloco }}</span>
+      <span class="rotate-50-y rotating-credits position-absolute">X {{ 'credits' | transloco }}</span>
+      <img class="rotate-50-y m-auto" src="assets/svg/nfc-rotating-image-empty.svg" alt="image">
+      <img class="rotate-50-y m-auto rotating-medal position-absolute" src="assets/svg/nfc-medal-empty.svg" alt="image">
+      <img class="m-auto rotating-star position-absolute" src="assets/svg/nfc-star-icon.svg" alt="image">
+    </div>
+  </ng-template>
+  <ng-template #right>
+    <div class="link position-relative mt-3" id="cash" (click)="redeemCredits()">
+      <span class="card-text-content">{{ 'redeem' | transloco }} X {{ 'credits' | transloco }}</span>
+      <img class="pt-3 scalable-image" src="assets/svg/card-background.svg" alt="image">
+    </div>
+    <div class="link position-relative" id="card" (click)="purchaseCredits()">
+      <span class="card-text-content">{{ 'purchase' | transloco }} X {{ 'credits' | transloco }}</span>
+      <img class="pt-3 scalable-image" src="assets/svg/card-background.svg" alt="image">
+    </div>
+    <div class="footer-logo-container">
+      {{ 'poweredBy' | transloco }} <img src="assets/svg/footer-logo.svg" alt="image">
+    </div>
+  </ng-template>
+</app-layout-divider>
+
+
+
+

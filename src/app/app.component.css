@@ -2,6 +2,7 @@
   height: 100%;
   background: transparent linear-gradient(119deg, #242942 0%, #171928 100%) 0% 0% no-repeat padding-box;
   color: white;
+  overflow-y: scroll;
 }
 
 .back-button-container {

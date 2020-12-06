@@ -1,0 +1,36 @@
+<app-layout-divider>
+  <ng-template #static>
+    <div class="back-button-container" (click)=goBack()>
+      <img src="assets/svg/back-button-bg.svg" alt="image">
+    </div>
+  </ng-template>
+  <ng-template #left>
+    <div class="content-header w-100 text-center">
+      <h1 class="w-100 text-center"> {{ 'verification' | transloco }}</h1>
+    </div>
+    <div class="row thank-you-wrapper">
+      <div class="col thank-you-image">
+        <img class="position-absolute thank-you-base" src="assets/svg/box-wrapper-border-mask.svg" alt="image">
+        <img class="position-absolute thank-you-background" src="assets/svg/verification-person.svg" alt="image">
+        <img class="position-absolute thank-you-bubble" src="assets/svg/verification-icon.svg" alt="image">
+      </div>
+    </div>
+  </ng-template>
+  <ng-template #right>
+
+    <div class="row">
+      <div class="pb-5 w-100 text-center">
+        <div class="position-relative py-3">
+          <span class="small-heading font-size-30 mb-3"> {{ 'enterCode' | transloco }}</span>
+          <img class="gradient-line" src="assets/svg/insert-money-gradient.svg" alt="image">
+        </div>
+      </div>
+    </div>
+    <div class="row" (click)="goToVerify()">
+      <img class="m-auto input-mask" src="assets/svg/verification-input.svg" alt="image">
+    </div>
+    <div class="footer-logo-container">
+      {{ 'poweredBy' | transloco }} <img src="assets/svg/footer-logo.svg" alt="image">
+    </div>
+  </ng-template>
+</app-layout-divider>

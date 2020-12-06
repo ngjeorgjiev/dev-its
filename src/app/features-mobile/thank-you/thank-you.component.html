@@ -1,0 +1,41 @@
+<app-layout-divider>
+  <ng-template #static>
+
+  </ng-template>
+  <ng-template #left>
+    <div class="row content-header w-100 text-center">
+      <h1 class="w-100"> {{ 'thankYou' | transloco }}
+        {{ 'forUsing' | transloco }} <br/>
+        {{ 'ourServices' | transloco }}</h1>
+    </div>
+    <div class="row thank-you-wrapper">
+      <div class="col thank-you-image">
+        <img class="position-absolute thank-you-base" src="assets/svg/box-wrapper-border-mask.svg" alt="image">
+        <img class="position-absolute thank-you-base" src="assets/svg/box-wrapper-header-large.svg" alt="image">
+        <img class="position-absolute thank-you-base-tip" src="assets/svg/box-wrapper-header-small.svg" alt="image">
+        <img class="position-absolute thank-you-card" src="assets/svg/thank-you-receipt.svg" alt="image">
+      </div>
+    </div>
+  </ng-template>
+  <ng-template #right>
+
+    <div class="row">
+      <div class="pb-5 w-100 text-center">
+        <div class="position-relative py-3">
+          <span class="small-heading font-size-30 mb-3"> {{ 'keepYourReceipt' | transloco }}</span>
+          <img class="gradient-line" src="assets/svg/insert-money-gradient.svg" alt="image">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="position-relative w-100 text-center">
+        <span class="font-size-30">{{ 'return' | transloco }} X {{ 'minutes' | transloco }}
+          <br/>
+          {{ 'andGetReward' | transloco }} SAR X</span>
+      </div>
+    </div>
+    <div class="footer-logo-container">
+      {{ 'poweredBy' | transloco }} <img src="assets/svg/footer-logo.svg" alt="image">
+    </div>
+  </ng-template>
+</app-layout-divider>

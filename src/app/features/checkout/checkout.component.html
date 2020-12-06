@@ -5,7 +5,7 @@
         <img src="assets/svg/back-button-bg.svg" alt="image">
       </div>
       <div class="footer-logo-container">
-        Powered by <img src="assets/svg/footer-logo.svg" alt="image">
+        {{ 'poweredBy' | transloco }}<img src="assets/svg/footer-logo.svg" alt="image">
       </div>
     </ng-template>
     <ng-template #left>
@@ -15,7 +15,7 @@
     </ng-template>
     <ng-template #right>
       <div class="link position-relative" id="cash" (click)="cash()">
-        <span class="card-text-content">Cash</span>
+        <span class="card-text-content">{{ 'cash' | transloco }}</span>
         <img class="pt-3 scalable-image" src="assets/svg/card-background.svg" alt="image">
         <div class="rotating-cash">
           <img class="position-absolute cash-background" src="assets/svg/cash-background-phone.svg" alt="image">
@@ -27,7 +27,7 @@
         </div>
       </div>
       <div class="link position-relative" id="card" (click)="card()">
-        <span class="card-text-content">Card</span>
+        <span class="card-text-content">{{ 'card' | transloco }}</span>
         <img class="pt-3 scalable-image" src="assets/svg/card-background.svg" alt="image">
         <div class="rotating-card">
           <img class="position-absolute card-base" src="assets/svg/card-base-icon.svg" alt="image">
@@ -35,7 +35,7 @@
         </div>
       </div>
       <div class="link position-relative" id="nfc" (click)="nfc()">
-        <span class="card-text-content">NFC</span>
+        <span class="card-text-content"> {{ 'nfc' | transloco }}</span>
         <img class="pt-3 scalable-image" src="assets/svg/card-background.svg" alt="image">
         <div class="rotating-nfc">
           <img class="position-absolute nfc-background" src="assets/svg/nfc-background-phone.svg" alt="image">

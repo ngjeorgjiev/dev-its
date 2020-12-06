@@ -1,0 +1,41 @@
+<app-layout-divider>
+  <ng-template #static>
+    <div class="back-button-container" (click)=goBack()>
+      <img src="assets/svg/back-button-bg.svg" alt="image">
+    </div>
+  </ng-template>
+  <ng-template #left>
+    <div class="row content-header w-100 text-center" (click)="insertMoney()">
+      <h1 class=" w-100 text-center">{{ 'please' | transloco }}{{ 'insert' | transloco }} <br/>{{ 'money' | transloco }}</h1>
+    </div>
+    <div class="row insert-money-wrapper">
+      <div class="col insert-money-image">
+        <img class="position-absolute insert-money-base" src="assets/svg/box-wrapper-border-mask.svg" alt="image">
+        <img class="position-absolute insert-money-base" src="assets/svg/box-wrapper-header-large.svg" alt="image">
+        <img class="position-absolute insert-money-base-tip" src="assets/svg/box-wrapper-header-small.svg" alt="image">
+        <img class="position-absolute insert-money-card" src="assets/svg/insert-money-card.svg" alt="image">
+      </div>
+    </div>
+  </ng-template>
+  <ng-template #right>
+    <div class="row" (click)="insertMoney()">
+      <div class="pb-5 w-100 text-center">
+        <div class="position-relative">
+          <span class="small-heading mb-3"> {{ 'amountPaid' | transloco }}:</span> <br />
+          <span class="currency-mobile">{{ 'amount' | transloco }} </span><span class="price-tag-mobile">0.00</span>
+          <img class="gradient-line" src="assets/svg/insert-money-gradient.svg" alt="image">
+        </div>
+      </div>
+    </div>
+    <div class="row" (click)="insertMoney()">
+      <div class="position-relative w-100 text-center">
+        <span class="small-heading mb-3 w-100 text-center"> {{ 'amountDue' | transloco }}:</span> <br />
+        <span class="currency-mobile">{{ 'amount' | transloco }} </span> <span class="price-tag-mobile">30.00</span>
+        <img class="gradient-line" src="assets/svg/insert-money-gradient.svg" alt="image">
+      </div>
+    </div>
+    <div class="footer-logo-container">
+      {{ 'poweredBy' | transloco }} <img src="assets/svg/footer-logo.svg" alt="image">
+    </div>
+  </ng-template>
+</app-layout-divider>

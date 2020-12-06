@@ -1,0 +1,116 @@
+
+.back-button-container {
+  cursor: pointer;
+  position: absolute;
+  top: -50px;
+  max-height: 130px;
+  left: -35px;
+  z-index: 20;
+}
+
+.back-button-container img {
+  width: 80%;
+}
+
+.footer-logo-container {
+  font-size: 10px;
+  padding: 40px 0 20px 0;
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+.content-header {
+  margin: 25% 0 10% 0;
+}
+
+.insert-pin-image {
+  overflow: hidden;
+  height: 648px;
+}
+
+.insert-pin-input {
+  width: 50%;
+  top: 0%;
+  left: 45px;
+}
+
+.insert-pin-keyboard {
+  width: 100%;
+  top: 3%;
+}
+
+.insert-pin-enter {
+  text-align: center;
+  cursor: pointer;
+}
+
+.insert-pin-enter img {
+  top: -112px;
+  left: 45px;
+  width: 90%;
+  position: absolute;
+}
+
+.insert-pin-digit {
+  position: absolute;
+  width: 100%;
+  top: -65%;
+  left: 2%;
+  cursor: pointer;
+}
+
+.insert-pin-reset-digit {
+  position: absolute;
+  width: 50%;
+  top: -11%;
+  left: 53%;
+}
+
+.insert-pin-row {
+  position: relative;
+  max-height: 100px;
+}
+
+.insert-pin-value {
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  cursor: pointer;
+}
+
+.insert-pin-zero {
+  max-width: 132px;
+  left: 68%;
+}
+
+.insert-pin-zero-value {
+  left: 99%;
+}
+
+.pin-keyboard {
+  padding-top: 180px;
+}
+
+.pin-keyboard-row {
+  min-height: 135px;
+}
+
+.input-masked-values {
+  font-size: 50px;
+  position: absolute;
+  top: -2px;
+  color: #0ed8d8;
+}
+
+.first {
+  left: 75px;
+}
+.second {
+  left: 115px;
+}
+.third {
+  left: 155px;
+}
+.fourth {
+  left: 195px;
+}

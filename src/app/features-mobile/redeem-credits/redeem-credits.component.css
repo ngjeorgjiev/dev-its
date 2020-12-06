@@ -1,0 +1,68 @@
+.back-button-container {
+  cursor: pointer;
+  position: absolute;
+  top: -50px;
+  left: -35px;
+  z-index: 20;
+}
+
+.back-button-container img {
+  width: 80%;
+}
+
+.footer-logo-container {
+  font-size: 10px;
+  padding: 40px 0 20px 0;
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+.content-header h1 {
+  font-family: "Montserrat";
+  font-size: 40px;
+  padding-top: 25%;
+}
+
+.redeem-credits-image {
+  overflow: hidden;
+  height: 385px;
+  margin: 15% 0;
+}
+
+.redeem-credits-base {
+  width: 90%;
+  top: 0%;
+}
+
+.redeem-credits-phone {
+  width: 67%;
+  top: 13%;
+  left: 17%;
+  animation: redeem-rotate-sideways-mobile 3s infinite linear;
+  animation-direction: alternate;
+}
+
+.redeem-credits-signal {
+  width: 10%;
+  top: 16%;
+  left: 21%;
+  animation: redeem-signal-grow-mobile 3s infinite linear;
+  animation-direction: alternate;
+}
+
+.gradient-line {
+  position: absolute;
+  height: 80px;
+  top: 0;
+  left: 280px;
+}
+
+@keyframes redeem-rotate-sideways-mobile {
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(-50deg);}
+}
+
+@keyframes redeem-signal-grow-mobile {
+  0%{top: 16%; left: 21%; width: 10%;}
+  100%{top: 10%; left: 14%; width: 18%;}
+}

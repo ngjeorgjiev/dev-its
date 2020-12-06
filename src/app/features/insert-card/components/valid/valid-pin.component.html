@@ -1,7 +1,7 @@
 <app-layout-divider>
   <ng-template #static>
     <div class="footer-logo-container">
-      Powered by <img src="assets/svg/footer-logo.svg" alt="image">
+      {{ 'poweredBy' | transloco }} <img src="assets/svg/footer-logo.svg" alt="image">
     </div>
   </ng-template>
   <ng-template #left>
@@ -14,9 +14,9 @@
     </div>
   </ng-template>
   <ng-template #right>
-    <div class="row content-header" (click)="thankYou()">
+    <div class="row content-header">
       <div class="col offset-md-3">
-        <h1 class="heading">Valid <br/>transaction</h1>
+        <h1 class="heading"> {{ 'valid' | transloco }} <br/> {{ 'transaction' | transloco }}</h1>
       </div>
     </div>
   </ng-template>

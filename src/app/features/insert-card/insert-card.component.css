@@ -34,5 +34,58 @@
 }
 
 .content-header {
-  padding-bottom: 250px;
+  padding-bottom: 200px;
+}
+
+.insert-pin-enter {
+  text-align: center;
+  cursor: pointer;
+}
+
+.insert-pin-digit {
+  position: absolute;
+  width: 100%;
+  top: -65%;
+  left: 2%;
+  cursor: pointer;
+}
+
+.insert-pin-row {
+  position: relative;
+  max-height: 100px;
+}
+
+.insert-pin-value {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  cursor: pointer;
+}
+
+.pin-keyboard {
+  padding-top: 180px;
+}
+
+.pin-keyboard-row {
+  min-height: 135px;
+}
+
+.input-masked-values {
+  font-size: 50px;
+  position: absolute;
+  top: 25px;
+  color: #0ed8d8;
+}
+
+.first {
+  left: 215px;
+}
+.second {
+  left: 265px;
+}
+.third {
+  left: 315px;
+}
+.fourth {
+  left: 365px;
 }
