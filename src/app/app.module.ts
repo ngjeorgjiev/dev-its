@@ -32,7 +32,6 @@ import { TranslocoModule, TRANSLOCO_CONFIG, TranslocoConfig } from '@ngneat/tran
         listenToLangChange: true,
         defaultLang: 'en',
         fallbackLang: 'arabic',
-        prodMode: environment.production,
         missingHandler: {
           logMissingKey: true
         }
