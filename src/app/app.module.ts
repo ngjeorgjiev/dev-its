@@ -30,6 +30,7 @@ import { TranslocoModule, TRANSLOCO_CONFIG, TranslocoConfig } from '@ngneat/tran
       useValue: {
         listenToLangChange: true,
         defaultLang: 'en',
+        fallbackLang: 'en',
         prodMode: environment.production
       } as TranslocoConfig
     },
