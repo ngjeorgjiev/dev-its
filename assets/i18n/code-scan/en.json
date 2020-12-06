@@ -1,0 +1,17 @@
+{
+  "codeScan":"QR code scan",
+  "AlignWithFrame":"Align QR code with the frame to scan",
+  "scanCode":"Scan code",
+  "invalidQRCode":"Invalid QR Code",
+  "validQRCode":"Valid QR Code",
+  "verified":"Verified",
+  "unverified":"Unverified",
+  "verification":"Verification",
+  "enterCode":"Please enter code sent to ###",
+  "verify":"Verify",
+  "sendCode":"Send Code",
+  "resendCode":"Resend Code",
+  "registration":"Registration",
+  "enterPhoneNumber":"Please enter your phone number to verify your account",
+  "poweredBy": "powered By"
+}

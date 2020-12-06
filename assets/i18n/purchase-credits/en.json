@@ -1,0 +1,7 @@
+{
+  "required" : "Required",
+  "credits" : "credits",
+  "cash" : "Cash",
+  "card" : "Card",
+  "poweredBy": "powered By"
+}
