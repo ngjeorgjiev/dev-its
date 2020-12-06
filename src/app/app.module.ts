@@ -28,10 +28,14 @@ import { TranslocoModule, TRANSLOCO_CONFIG, TranslocoConfig } from '@ngneat/tran
   providers: [{
       provide: TRANSLOCO_CONFIG,
       useValue: {
+        availableLangs: ['en', 'arabic'],
         listenToLangChange: true,
         defaultLang: 'en',
-        fallbackLang: 'en',
-        prodMode: environment.production
+        fallbackLang: 'arabic',
+        prodMode: environment.production,
+        missingHandler: {
+          logMissingKey: true
+        }
       } as TranslocoConfig
     },
     translocoLoader
