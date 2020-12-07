@@ -702,7 +702,7 @@ class HttpLoader {
         this.http = http;
     }
     getTranslation(langPath) {
-        return this.http.get(`/assets/i18n/${langPath}.json`);
+        return this.http.get(`assets/i18n/${langPath}.json`);
     }
 }
 HttpLoader.ɵfac = function HttpLoader_Factory(t) { return new (t || HttpLoader)(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"])); };
